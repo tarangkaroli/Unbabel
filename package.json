@@ -1,0 +1,27 @@
+{
+  "name": "annotation",
+  "version": "1.0.0",
+  "description": "Web GUI for Unbabel Annotation",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "Unbabel",
+    "Annotation"
+  ],
+  "author": "Tarang Karoli",
+  "devDependencies": {
+    "hashmap": "^2.3.0",
+    "jasmine": "^3.2.0",
+    "jasmine-spec-reporter": "^2.4.0",
+    "lodash": "^4.17.11",
+    "protractor": "^5.4.1"
+  },
+  "dependencies": {
+    "yarn": "^1.9.4"
+  }
+}
