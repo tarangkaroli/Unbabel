@@ -71,7 +71,6 @@ ResourcePage.prototype = {
         var AnnotationPage = require('../pages/annotation.po.js');
         var annotationPage = new AnnotationPage();
         var submenuname = subMenuName || 0;
-        // console.log(submenuname);
 
         browser.isElementPresent(this.error_arrowDropDown).then(function (present) {
             if(present) {

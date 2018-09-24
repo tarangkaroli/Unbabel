@@ -151,7 +151,7 @@ describe('Annotation operation automation', function () {
         expect(annotationPage.activeSideTab.get(1).getText()).toContain("Finish or Report");
         annotationPage.waitForElementsVisibilityStatus(annotationPage.radioBox__Finish, true, 5000);
 
-        //rating it five stars
+        //random star ratings for the finish task
         annotationPage.randomStarRating();
         browser.sleep(2000);
 
@@ -162,7 +162,6 @@ describe('Annotation operation automation', function () {
 
         //discrad the finish process
         annotationPage.waitForElementsVisibilityStatus(annotationPage.jobFinish.completeFinish, true, 30000);
-        // browser.sleep(3000);
         annotationPage.jobFinish.discardFinish.click();
         annotationPage.waitForElementsVisibilityStatus(annotationPage.backButton, true);
         browser.sleep(3000);
@@ -170,7 +169,6 @@ describe('Annotation operation automation', function () {
         //complete the finish process
         annotationPage.finishButton.click();
         annotationPage.waitForElementsVisibilityStatus(annotationPage.jobFinish.completeFinish, true, 30000);
-        // browser.sleep(3000);
         annotationPage.jobFinish.completeFinish.click();
 
         annotationPage.waitForElementsVisibilityStatus(annotationPage.noAnnotationListMessage, true, 20000);
