@@ -41,3 +41,5 @@ Open another command line window and navigate to "test" folder and to execute th
       protractor protractor.conf.js
       
 The test cases are executed and the result is displayed.
+
+[NOTE: The project is executed on a Windows 7 64 bit environment, for any another environment please make the required changes to execute. Also make sure the changes are made to "protractor.conf.js" file, if any are required.]
