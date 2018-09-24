@@ -18,7 +18,7 @@ The webdriver-manager is a helper tool to easily get an instance of a Selenium S
 
     webdriver-manager update
     
-For more information on protarctor please visit: www.protractortest.org/#/
+For more information on protractor please visit: www.protractortest.org/#/
 
 The project is structured in the following way:
 
