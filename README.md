@@ -1,4 +1,4 @@
-# Unbabel
+# Unbabel - Automation
 
 This is a protractor project for Unbabel Annotation application, where the protractor automates the automation of different annotation to be performed based on different error types, severity and then finish the on process annotation.
 
@@ -44,3 +44,19 @@ Open another command line window and navigate to "test" folder and to execute th
 The test cases are executed and the result is displayed.
 
 [NOTE: The project is executed on a Windows 7 64 bit environment, for any another environment please make the required changes to execute. Also make sure the changes are made to "protractor.conf.js" file, if any are required.]
+
+# Unbabel - Load Testing
+
+This is a Apache JMeter project for Unbabel load testing application, where the JMeter emulates the load testing scenario of the IP provided.
+
+The pre-requisites for the test to run is that at any time there must be 75 users with 350 requests per second and response time under 200 ms.
+
+For the purpose of 75 users, I have used thread group with 75 threads at any given run time.
+
+For emulating 350 requests I have used Throughput Timer: Constant Throughput timer where I have defined the target throughput.
+
+And the other entity is Loop Controller where it executes the load testing for 100 iterations.
+
+After the various runs I have analysed that the maximum throughput that the load testing can achieve with target throughput 350 requests/second for all active threads in a shared thread group is 38.7 requests/seconds.
+
+Thus, in my conclusion the system hosting the API is not able to meet the desired Performance standards.
